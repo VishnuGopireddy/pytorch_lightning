@@ -1,2 +1,2 @@
 # pytorch_lightning
-PyTorch Lightning for image classification
+Pytorch Lightning repository to train a cnn model for image classification

@@ -1,0 +1,19 @@
+project_name: TORCH_CLASSIFICATION  # for wandb logs
+gpus_ids: [0]
+
+data:
+  data_folder: /home/vishnu/Desktop/torch_lightning/data/data
+  logs_dir: /home/vishnu/Desktop/torch_lightning/data/train_logs
+  split_val_test: True
+  
+model:
+  num_classes: 7
+  image_size: (256, 256)  # tuple or list of size two (height, width)
+  model_name: resnet34   # supported: resnet18, resnet34, resnet50
+  pretrained: True       # True or False
+
+training:
+  batch_size: 32
+  epochs: 5
+  learning_rate: 0.0001
+  num_workers: 8
