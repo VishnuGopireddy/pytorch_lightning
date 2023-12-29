@@ -30,7 +30,7 @@ class ImageDataset(LightningDataModule):
             ])
         
         test_transform = transforms.Compose([
-            transforms.Resize((256,256)),
+            transforms.Resize((self.img_size, self.img_size)),
             transforms.ToTensor()
         ])        
         
